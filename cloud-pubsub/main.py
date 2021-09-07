@@ -34,7 +34,7 @@ def process(message):
     """Process received message"""
     print("[{0}] Processing: {1}".format(datetime.datetime.now(),
                                          message.message_id))
-    time.sleep(3)
+    time.sleep(0.5)
     print("[{0}] Processed: {1}".format(datetime.datetime.now(),
                                         message.message_id))
 # [END container_pubsub_pull]

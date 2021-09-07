@@ -26,7 +26,8 @@ spec:
       labels:
         app: pubsub
     spec:
+      serviceAccountName: pubsub-svc-acct
       containers:
       - name: subscriber
-        image: gcr.io/google-samples/pubsub-sample:v1
+        image: gcr.io/garisingh-misc/pubsub-sample:latest
 # [END container_pubsub_deployment]
